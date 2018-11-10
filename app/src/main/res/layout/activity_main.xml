@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+
+        <Button
+            android:id="@+id/buttonStartChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:text="@string/start_chrono"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+
+        <Button
+            android:id="@+id/buttonStopChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_chrono"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+
+        <Button
+            android:id="@+id/buttonResetChronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:text="@string/reset_chrono"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"></Space>
+
+    </LinearLayout>
+
+    <Chronometer
+        android:id="@+id/myChronometer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textSize="60sp" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+        <TextView
+            android:id="@+id/textViewLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vibrate every "
+            android:textColor="@color/colorPrimaryDark"
+             />
+
+        <EditText
+            android:id="@+id/editTextInterval"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+
+            android:digits="0123456789"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:maxLength="2" />
+        <TextView
+            android:id="@+id/textViewLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="minutes" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></Space>
+
+    </LinearLayout>
+</LinearLayout>

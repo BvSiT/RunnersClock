@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Runner\'s Clock</string>
+    <string name="start_chrono">Start</string>
+    <string name="stop_chrono">Stop</string>
+    <string name="reset_chrono">Reset</string>
+    <string name="dialog_title_battery_optimizations">Disable battery optimizations</string>
+    <string name="dialog_message_battery_optimizations">You need to disable Battery Optimizations for this app to ensure that vibration will continue in Doze mode. Also in Settings > Battery > Launch change Manage automatically to Manage manually.</string>
+    <string name="OK">OK</string>
+</resources>

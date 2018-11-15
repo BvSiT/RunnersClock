@@ -88,24 +88,21 @@
             android:id="@+id/textViewLabel1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vibrate every "
+            android:text="@string/vibrate_every"
             android:textColor="@color/colorPrimaryDark"
              />
 
-        <EditText
+        <com.bvsit.runnersclock.TimeEditText
             android:id="@+id/editTextInterval"
             android:layout_width="30dp"
             android:layout_height="wrap_content"
-
             android:digits="0123456789"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:maxLength="2" />
+        />
         <TextView
             android:id="@+id/textViewLabel2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="minutes" />
+            android:text="@string/minutes" />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
